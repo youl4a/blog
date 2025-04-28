@@ -5,7 +5,7 @@ export default {
       url: '/about/'
     },
     {
-      text: 'Docs',
+      text: 'Freebies',
       url: '/get-started/'
     },
     {
@@ -18,17 +18,14 @@ export default {
     }
   ],
   bottom: [
-    {
-      text: 'Style guide',
-      url: '/styleguide/'
-    },
-    {
-      text: 'Imprint',
-      url: '/imprint/'
-    },
+   
     {
       text: 'Privacy',
       url: '/privacy/'
+    },
+    {
+      text: 'Contacts',
+      url: '/Contact/'
     }
   ]
 };
