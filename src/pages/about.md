@@ -1,5 +1,5 @@
 ---
-title: About
+title: About me
 permalink: /about/index.html
 description: 'About me page'
 layout: page
@@ -15,3 +15,5 @@ Thanks for visiting my corner of the web!
  </section>
 {% svg "divider/soft-bottom", null, "divider" %}
 </article>
+
+
