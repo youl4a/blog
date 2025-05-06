@@ -11,37 +11,75 @@ description: 'My comfortable corner of the web'
       <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
     </div>
     {% svg "divider/waves", null, "divider" %}
-  </header>
-
-  <article class="full | region">
+  <div class="feature |  region region-space-l">
+        <custom-masonry layout="50-50">
     <div class="wrapper flow prose">
-      <h2 id="an-eleventy-starter">Hi, I'm Julia</h2>
+      <h2 id="an-eleventy-starter">Welcome</h2>
       <p>
-        I’m a passionate creator who loves designing beautiful and functional spaces. 
-		<p>Whether I’m working on custom invitations or exploring new design trends, I strive to bring creativity and joy into everything I do. When I’m not designing, you can find me enjoying a good book, experimenting in the kitchen, or spending time with family.
-
-<p>Thanks for visiting my corner of the web!
+        To my cozy corner of the web! I'm Julia — a graphic designer passionate about creating charming, joyful designs for life's special moments.
+		<p>I love turning ideas into beautiful invitations and digital creations.
+		
     </div>
-  </article>
+	<img src="/assets/images/images-pages/avatar.png" alt="Photo of me" eleventy:widths="50,300" sizes="(max-width: 500px) 50vw, 100vw" loading="eager" decoding="sync"/>
+        </custom-masonry>
+  </div>
+</div>
+  </header>
+  
 
 <article class="full  section" style="--spot-color: var(--color-bg-accent)">
 {% svg "divider/soft-top", null, "divider" %}
- <section class="feature section__inner wrapper">
-      <article class="full | region">
+ <section class="feature section__inner wrapper">   
     <div class="wrapper flow prose">
-	  <h2 id="an-eleventy-starter">Article 2</h2>
+	  <h2 id="an-eleventy-starter">What this blog is about</h2>
 	  <p>
-        I’m a passionate creator who loves designing beautiful and functional spaces. 
-		<p>Whether I’m working on custom invitations or exploring new design trends, I strive to bring creativity and joy into everything I do. When I’m not designing, you can find me enjoying a good book, experimenting in the kitchen, or spending time with family.
+        I've always loved art, design, and celebrating life's moments.
+After years of creating for friends and family, I opened my Etsy shops to share my designs with a wider community. 
+<p>Every piece is made with love, a little bit of magic, and a whole lot of joy.
 	  <p>
     </section>
 {% svg "divider/soft-bottom", null, "divider" %}
-</article>
+</article></div>
 
+
+<section class="full | region">
+    <div class="wrapper flow prose">
+      <h3>Featured designs</h3>
+<div class="wrapper">
+  <div class="feature | region region-space-l">
+    <custom-masonry layout="33-33-33" class="card-grid">
+      
+      <custom-card class="card">
+        {% image "/assets/images/images-pages/Invite1.png", "Invite 1" %}
+        <h4 slot="headline">Invite1</h4>
+        <p slot="content">A magical and playful design perfect for birthdays or baby showers.</p>
+      </custom-card>
+
+      <custom-card class="card">
+        {% image "/assets/images/images-pages/Invite1.png", "Invite 2" %}
+        <h4 slot="headline">Invite2</h4>
+        <p slot="content">Elegant, minimal, and timeless invitation for formal events.</p>
+      </custom-card>
+
+      <custom-card class="card">
+        {% image "/assets/images/images-pages/Invite1.png", "Invite 3" %}
+        <h4 slot="headline">Invite3</h4>
+        <p slot="content">Bright and cheerful design, ideal for kid's parties or announcements.</p>
+      </custom-card>
+
+    </custom-masonry>
+
+    <div class="wrapper flow" style="text-align: center; margin-top: 2rem;">
+      <p><a href="https://www.etsy.com/shop/YourEtsyShop">Have a look for more</a>
+    </div>
+  </div>
+</div>
+</section>
+</div>
 
   <section class="full | region">
     <div class="wrapper flow prose">
-      <h2>{{ blog.title }}</h2>
+      <h3>Recent posts in blog</h3>
       {% if blog.intro %}
         <p>{{ blog.intro }}</p>
       {% endif %}
@@ -64,11 +102,49 @@ description: 'My comfortable corner of the web'
  <section class="feature section__inner wrapper">
       <article class="full | region">
     <div class="wrapper flow prose">
-	  <h2 id="an-eleventy-starter">Article 2</h2>
-	  <p>
-        I’m a passionate creator who loves designing beautiful and functional spaces. 
-		<p>Whether I’m working on custom invitations or exploring new design trends, I strive to bring creativity and joy into everything I do. When I’m not designing, you can find me enjoying a good book, experimenting in the kitchen, or spending time with family.
+	  <h2 id="an-eleventy-starter"> </h2>
+		
+		<iframe width="540" height="800" src="https://sibforms.com/serve/MUIFAP8k_tg8z8O8hoUs-936RBnNCqpCj2Mxo8QB_OooAJlMIK7CSZgAtYRmysxwwk3-NoZlsMTS4u4QX-kXPvAuGXnGj5j7dGT8G8_wsbqNJXbbWgNXHMXRtblxnSIkvLotgZaRjpSPaTgXV6b4__Mh6YVX-dZjnjc9rjkDKQVVpQ25XDp-ltbrIcC0AFOFlPdKZzucGFU8T7PS" frameborder="0" scrolling="auto" allowfullscreen style="display: block;margin-left: auto;margin-right: auto;max-width: 100%;"></iframe>
 	  <p>
     </section>
 {% svg "divider/soft-bottom", null, "divider" %}
 </article>
+
+<button id="backToTop" class="back-to-top" onclick="scrollToTop()"> Back ↑ </button>
+
+<style>
+  .back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--color-gold);
+    color: white;
+    border: none;
+    padding: 0.75rem 1.25rem;
+    border-radius: 999px;
+    font-size: 1rem;
+    cursor: pointer;
+    display: none;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  .back-to-top:hover {
+    background-color: var(--color-gold-dark);
+  }
+</style>
+
+<script>
+  const backToTopBtn = document.getElementById("backToTop");
+
+  window.addEventListener("scroll", () => {
+    if (window.scrollY > 400) {
+      backToTopBtn.style.display = "block";
+    } else {
+      backToTopBtn.style.display = "none";
+    }
+  });
+
+  function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  }
+</script>
