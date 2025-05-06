@@ -24,7 +24,9 @@ class customEasteregg extends HTMLElement {
   }
 
   handleKeydown(event) {
-    const key = event.key.toLowerCase();
+  const key = event?.key?.toLowerCase?.();
+  if (!key) return; // Prevent errors on invalid input
+  
     this.codes.forEach((code, idx) => {
       if (code[this.indexes[idx]] === key) {
         this.indexes[idx]++;
