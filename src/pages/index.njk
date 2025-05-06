@@ -116,25 +116,26 @@ After years of creating for friends and family, I opened my Etsy shops to share 
   <p class="text-muted">Sign up to get fresh freebies delivered straight to your inbox!</p>
 
   <!-- Brevo Form Start -->
-  <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFAJRxqNzGF27HRWbURaD04RzLjxWOAmQl2tx81rPKngCeBd748-tm9OFrCwudaPtoN8dz1ugrTUztdvZiEx8s33HVBfcDYaB8n4s1qAuPJhFgCOJ9W0hagwvsMj1fSUNLmIPbYiB3RF1i7UIiYNNRuiGbF6p7vtt2H_6H-qtAoeFbhTMhOBmSFITDyaloh1jhezyP9FdqkaON" data-type="subscription">
-
+  <section class="card flow" style="max-width: 540px; margin: auto; text-align: center;">
+  <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFALvpn2XiE3shU9FTwEOsF-Cgf6a_Sd9mZ0IJkiPbOBZLC85htSxi5qsG-bZK9KyBFHTaz_D2K1wnBzv14eZURivY1t9FXBYrXdMmW3ULTBeH71gfOVFhT14C2QfHGywpwq2XgGn925MR6gOLstfTjOC1aT3v1H3Af97cAVkJJy-SqatmKgdBIxaz26baswzKjSYkJVQkkV8u" data-type="subscription">
     <label for="EMAIL" class="visually-hidden">Email Address</label>
-    <input class="input" type="email" id="EMAIL" name="EMAIL" placeholder="Enter your email" required style="text-align: center; font-family: Futura, sans-serif;">
+    <input class="input" type="email" id="EMAIL" name="EMAIL" placeholder="Enter your email" required>
 
     <div class="recaptcha-box" style="margin: 1.5rem 0;">
       <label class="text-sm">Please check the box to prove you're not a robot.</label>
-      <div class="g-recaptcha" id="sib-captcha" data-sitekey="6Lfvky8rAAAAAJE2Rjv6l7YT2UQynKBsYS28EMkX" data-callback="handleCaptchaResponse" style="margin: 1rem auto; display: inline-block;"></div>
+      <div class="g-recaptcha" id="sib-captcha" data-sitekey="6Lfvky8rAAAAAJE2Rjv6l7YT2UQynKBsYS28EMkX" data-callback="handleCaptchaResponse"></div>
       <label class="text-xs text-muted">Form secured by reCAPTCHA</label>
     </div>
-
+<div style="text-align: center; margin-top: 2rem;">
     <button type="submit" class="button">Subscribe</button>
-
+	</div>
     <input type="text" name="email_address_check" value="" class="input--hidden">
     <input type="hidden" name="locale" value="en">
   </form>
 
-  <div id="success-message" class="notice success" style="display:none;">Your subscription has been successful!</div>
-  <div id="error-message" class="notice error" style="display:none;">Your subscription could not be saved. Please try again.</div>
+  <div id="success-message" class="notice success" style="display: none;">Your subscription has been successful!</div>
+  <div id="error-message" class="notice error" style="display: none;">Your subscription could not be saved. Please try again.</div>
+</section>
   <!-- Brevo Form End -->
 </section>
 
