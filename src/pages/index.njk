@@ -11,21 +11,30 @@ description: 'My comfortable corner of the web'
       <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
     </div>
     {% svg "divider/waves", null, "divider" %}
-  <div class="feature |  region region-space-l">
-        <custom-masonry layout="50-50">
-    <div class="wrapper flow prose">
-      <h2 id="an-eleventy-starter">Welcome</h2>
-      <p>
-        To my cozy corner of the web! I'm Julia — a graphic designer passionate about creating charming, joyful designs for life's special moments.
-		<p>I love turning ideas into beautiful invitations and digital creations.
-		
+    <div class="feature | region region-space-l">
+      <custom-masonry layout="50-50">
+        <div class="wrapper flow prose" style="margin-left: 4rem;">
+          <h2 id="an-eleventy-starter">Welcome</h2>
+          <p>To my cozy corner of the web! I'm Julia — a graphic designer passionate about creating charming, joyful designs for life's special moments.</p>
+          <p>I love turning ideas into beautiful invitations and digital creations.</p>
+        </div>
+        <div class="card text-center">
+          <img
+            src="/assets/images/images-pages/avatar.png"
+            alt="Photo of me"
+            style="border-radius: 50%; max-width: 250px; margin: 0 auto;"
+            eleventy:widths="150,300"
+            sizes="(max-width: 500px) 80vw, 300px"
+            loading="eager"
+            decoding="sync"
+          />
+        </div>
+      </custom-masonry>
     </div>
-	<img src="/assets/images/images-pages/avatar.png" alt="Photo of me" eleventy:widths="50,300" sizes="(max-width: 500px) 50vw, 100vw" loading="eager" decoding="sync"/>
-        </custom-masonry>
-  </div>
-</div>
   </header>
+</div>
   
+
 
 <article class="full  section" style="--spot-color: var(--color-bg-accent)">
 {% svg "divider/soft-top", null, "divider" %}
