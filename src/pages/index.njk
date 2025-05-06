@@ -35,7 +35,6 @@ description: 'My comfortable corner of the web'
 </div>
   
 
-
 <article class="full  section" style="--spot-color: var(--color-bg-accent)">
 {% svg "divider/soft-top", null, "divider" %}
  <section class="feature section__inner wrapper">   
@@ -132,6 +131,13 @@ After years of creating for friends and family, I opened my Etsy shops to share 
     <input type="text" name="email_address_check" value="" class="input--hidden">
     <input type="hidden" name="locale" value="en">
   </form>
+  <div id="success-message" class="sib-form-message-panel" style="display:none;">
+  Your subscription has been successful!
+</div>
+
+<div id="error-message" class="sib-form-message-panel" style="display:none;">
+  Your subscription could not be saved. Please try again.
+</div>
 
   <div id="success-message" class="notice success" style="display: none;">Your subscription has been successful!</div>
   <div id="error-message" class="notice error" style="display: none;">Your subscription could not be saved. Please try again.</div>
