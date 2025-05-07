@@ -8,12 +8,11 @@ layout: page
     <div class="feature | region region-space-l" style="padding-top: 1rem;">
       <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 1rem; max-width: 1000px; margin: 0 auto;">
 
-        
-
+       
         <!-- Image Column -->
         <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
           <img
-            src="/assets/images/images-pages/mekids.jpg"
+            src="/assets/images/images-pages/MeKids.JPG"
             alt="Photo of me"
             style="border: none; border-radius: 50%; max-width: 100%; height: auto;"
             eleventy:widths="150,300"
