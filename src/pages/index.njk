@@ -11,79 +11,70 @@ description: 'My comfortable corner of the web'
       <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
     </div>
     {% svg "divider/waves", null, "divider" %}
+    
     <div class="feature | region region-space-l">
-      <custom-masonry layout="50-50">
-        <div class="wrapper flow prose" style="margin-left: 4rem;">
+      <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+        
+        <!-- Text Column -->
+        <div style="flex: 1 1 300px; max-width: 480px;" class="flow prose">
           <h2 id="an-eleventy-starter">Welcome</h2>
-          <p>To my cozy corner of the web! I'm Julia — a graphic designer passionate about creating charming, joyful designs for life's special moments.</p>
+          <p>To my cozy corner of the web! 
+		  <br>I'm Julia — a graphic designer passionate about creating charming, joyful designs for life's special moments.</p>
           <p>I love turning ideas into beautiful invitations and digital creations.</p>
+
+		  <p>More about me  <a href="/about"> ⇢</a></p>
         </div>
-        <div class="card text-center">
+
+        <!-- Image Column -->
+        <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
           <img
             src="/assets/images/images-pages/avatar.png"
             alt="Photo of me"
-            style="border-radius: 50%; max-width: 250px; margin: 0 auto;"
+            style="border-radius: 50%; max-width: 100%; height: auto;"
             eleventy:widths="150,300"
-            sizes="(max-width: 500px) 80vw, 300px"
+            sizes="(max-width: 60px) 80vw, 300px"
             loading="eager"
             decoding="sync"
           />
         </div>
-      </custom-masonry>
+        
+      </div>
     </div>
   </header>
 </div>
   
-
-<article class="full  section" style="--spot-color: var(--color-bg-accent)">
-{% svg "divider/soft-top", null, "divider" %}
- <section class="feature section__inner wrapper">   
-    <div class="wrapper flow prose">
-	  <h2 id="an-eleventy-starter">What this blog is about</h2>
-	  <p>
-        I've always loved art, design, and celebrating life's moments.
-After years of creating for friends and family, I opened my Etsy shops to share my designs with a wider community. 
-<p>Every piece is made with love, a little bit of magic, and a whole lot of joy.
-	  <p>
-    </section>
-{% svg "divider/soft-bottom", null, "divider" %}
-</article></div>
+<article class="full section" style="--spot-color: var(--color-bg-accent)">
+  {% svg "divider/soft-top", null, "divider" %}
+  
+  <section class="feature section__inner wrapper">
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem; max-width: 1000px; margin: 0 auto;">
 
 
-<section class="full | region">
-    <div class="wrapper flow prose">
-      <h3>Featured designs</h3>
-<div class="wrapper">
-  <div class="feature | region region-space-l">
-    <custom-masonry layout="33-33-33" class="card-grid">
-      
-      <custom-card class="card">
-        {% image "/assets/images/images-pages/Invite1.png", "Invite 1" %}
-        <h4 slot="headline">Invite1</h4>
-        <p slot="content">A magical and playful design perfect for birthdays or baby showers.</p>
-      </custom-card>
+      <!-- Image or Decorative Column (Optional) -->
+      <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
+        <img
+          src="/assets/images/images-pages/avatar.png"
+          alt="Decorative image"
+          style="max-width: 100%; height: auto;"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
 
-      <custom-card class="card">
-        {% image "/assets/images/images-pages/Invite1.png", "Invite 2" %}
-        <h4 slot="headline">Invite2</h4>
-        <p slot="content">Elegant, minimal, and timeless invitation for formal events.</p>
-      </custom-card>
+      <!-- Text Column -->
+      <div style="flex: 1 1 300px; max-width: 480px;" class="flow prose">
+        <p><h2 id="an-eleventy-starter">About this site</h2></p>
+        <p>After years of creating for friends and family, I opened my Etsy shops to share my designs with a wider community.</p>
+<p>Here on this site, I share insights from running my design business, along with helpful materials and tools for fellow creatives.</p>
+      </div>
 
-      <custom-card class="card">
-        {% image "/assets/images/images-pages/Invite1.png", "Invite 3" %}
-        <h4 slot="headline">Invite3</h4>
-        <p slot="content">Bright and cheerful design, ideal for kid's parties or announcements.</p>
-      </custom-card>
 
-    </custom-masonry>
-
-    <div class="wrapper flow" style="text-align: center; margin-top: 2rem;">
-      <p><a href="https://www.etsy.com/shop/YourEtsyShop">Have a look for more</a>
     </div>
-  </div>
-</div>
-</section>
-</div>
+  </section>
+  
+  
+  {% svg "divider/soft-bottom", null, "divider" %}
+</article>
 
   <section class="full | region">
     <div class="wrapper flow prose">
@@ -104,6 +95,18 @@ After years of creating for friends and family, I opened my Etsy shops to share 
   </section>
 </div>
 
+<blockquote style="
+  font-style: italic; 
+  color: var(--color-dark-muted); 
+  margin: 1rem auto; 
+  padding: 1rem 1.5rem; 
+  border-left: 4px solid var(--color-gold); 
+  max-width: 1200px; 
+  text-align: center;
+">
+  “When love and skill work together, expect a masterpiece.”<br>
+  <span style="display: block; margin-top: 0.5rem; font-weight: 500;">— John Ruskin</span>
+</blockquote>
 
 <article class="full  section" style="--spot-color: var(--color-gold)">
 {% svg "divider/soft-top", null, "divider" %}

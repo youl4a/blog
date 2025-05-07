@@ -21,7 +21,6 @@
         {% endfor %}
       </nav>
 
-    {% include 'partials/theme-switch.njk' %}
 	
       <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
         <!-- gets the first item from the feed loop set in meta -->
@@ -58,4 +57,5 @@
 </script>
 <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+    {% include 'partials/theme-switch.njk' %}
 </footer>
