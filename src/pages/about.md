@@ -12,7 +12,7 @@ layout: page
         <!-- Image Column -->
         <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
           <img
-            src="/assets/images/images-pages/MeKids.JPG"
+            src="/assets/images/images-pages/mekids.png"
             alt="Photo of me"
             style="border: none; border-radius: 50%; max-width: 100%; height: auto;"
             eleventy:widths="150,300"
