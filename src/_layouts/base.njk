@@ -69,6 +69,14 @@
     });
   }
 </script>
+<script>
+  // Patch native elements with removeClass if jQuery isn't loaded
+  if (!Element.prototype.removeClass) {
+    Element.prototype.removeClass = function (cls) {
+      this.classList.remove(cls);
+    };
+  }
+</script>
 <script src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
 <link rel="stylesheet" href="https://sibforms.com/forms/end-form/build/sib-styles.css">
