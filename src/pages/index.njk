@@ -12,15 +12,15 @@ description: 'My comfortable corner of the web'
     </div>
     {% svg "divider/waves", null, "divider" %}
     
-    <div class="feature | region region-space-l">
-      <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem; max-width: 1000px; margin: 0 auto;">
+<div class="region wrapper flow prose" style="--region-space-top: var(--space-xl-2xl)">
+      <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 2rem; max-width: 1200px; margin: 0 auto;">
         
         <!-- Text Column -->
         <div style="flex: 1 1 300px; max-width: 480px;" class="flow prose">
           <h2 id="an-eleventy-starter">Welcome</h2>
           <p>To my cozy corner of the web! 
-		  <br>I'm Julia — a graphic designer passionate about creating charming, joyful designs for life's special moments.</p>
-          <p>I love turning ideas into beautiful invitations and digital creations.</p>
+		  <br>I'm <b>Julia</b> — a graphic designer passionate about creating charming, joyful designs for life's special moments.</p>
+          <p>After years of creating for friends and family, I opened my Etsy shops to share my designs with a wider community.</p>
 
 		  <p>More about me  <a href="/about"> ⇢</a></p>
         </div>
@@ -53,9 +53,9 @@ description: 'My comfortable corner of the web'
       <!-- Image or Decorative Column (Optional) -->
       <div style="flex: 1 1 300px; max-width: 300px; text-align: center;">
         <img
-          src="/assets/images/images-pages/avatar.png"
+          src="/assets/images/images-pages/site.png"
           alt="Decorative image"
-          style="max-width: 100%; height: auto;"
+          style="max-width: 80%; height: auto;"
           loading="lazy"
           decoding="async"
         />
@@ -64,8 +64,10 @@ description: 'My comfortable corner of the web'
       <!-- Text Column -->
       <div style="flex: 1 1 300px; max-width: 480px;" class="flow prose">
         <p><h2 id="an-eleventy-starter">About this site</h2></p>
-        <p>After years of creating for friends and family, I opened my Etsy shops to share my designs with a wider community.</p>
+        <p></p>
 <p>Here on this site, I share insights from running my design business, along with helpful materials and tools for fellow creatives.</p>
+<p>Take a look to my  <a href="/about"> Freebies ⇢</a></p>
+<br> </br>
       </div>
 
 
@@ -113,7 +115,7 @@ description: 'My comfortable corner of the web'
  <section class="feature section__inner wrapper">
       <article class="full | region">
     <div class="wrapper flow prose">
-	  <section class="card flow" style="background-color: #ebd3bc; text-align: center; max-width: 540px; margin: 2rem auto; padding: 2rem;">
+	  <section class="card flow" style="background-color: #ebd3bc; text-align: center; max-width: 540px; margin: 2rem auto; padding: 1rem;">
   <h2 class="h3">Let's Keep in Touch!</h2>
   <p class="text-muted">Sign up to get fresh freebies delivered straight to your inbox!</p>
 
@@ -121,7 +123,7 @@ description: 'My comfortable corner of the web'
   <section class="card flow" style="max-width: 540px; margin: auto; text-align: center;">
   <form id="sib-form" method="POST" action="https://sibforms.com/serve/MUIFALvpn2XiE3shU9FTwEOsF-Cgf6a_Sd9mZ0IJkiPbOBZLC85htSxi5qsG-bZK9KyBFHTaz_D2K1wnBzv14eZURivY1t9FXBYrXdMmW3ULTBeH71gfOVFhT14C2QfHGywpwq2XgGn925MR6gOLstfTjOC1aT3v1H3Af97cAVkJJy-SqatmKgdBIxaz26baswzKjSYkJVQkkV8u" data-type="subscription">
     <label for="EMAIL" class="visually-hidden">Email Address</label>
-    <input class="input" type="email" id="EMAIL" name="EMAIL" placeholder="Enter your email" required>
+    <input class="input" type="email" id="EMAIL" name="EMAIL" placeholder="Enter your email" aria-label="Email Address" required>
 
     <div class="recaptcha-box" style="margin: 1.5rem 0;">
       <label class="text-sm">Please check the box to prove you're not a robot.</label>
@@ -141,11 +143,9 @@ description: 'My comfortable corner of the web'
 <div id="error-message" class="sib-form-message-panel" style="display:none;">
   Your subscription could not be saved. Please try again.
 </div>
-
-  <div id="success-message" class="notice success" style="display: none;">Your subscription has been successful!</div>
-  <div id="error-message" class="notice error" style="display: none;">Your subscription could not be saved. Please try again.</div>
 </section>
   <!-- Brevo Form End -->
+ 
 </section>
 
 	
