@@ -137,5 +137,23 @@
 </script>
 <script src="https://www.google.com/recaptcha/api.js?hl=en"></script>
 <script defer src="https://sibforms.com/forms/end-form/build/main.js"></script>
+<!-- Start Patch Brevo Form -->
+<script>
+  const errorMessage = document.getElementById("error-message");
+  const observer = new MutationObserver(() => {
+    if (errorMessage.style.display === "block") {
+      // Wait 1 second before showing it
+      setTimeout(() => {
+        errorMessage.style.opacity = 1;
+      }, 1000);
+    }
+  });
+
+  if (errorMessage) {
+    errorMessage.style.opacity = 0;
+    observer.observe(errorMessage, { attributes: true, attributeFilter: ['style'] });
+  }
+</script>
+<!-- End Patch Brevo Form -->
   </body>
 </html>

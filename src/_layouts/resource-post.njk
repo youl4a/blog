@@ -1,0 +1,22 @@
+---
+layout: base
+schema: BlogPosting
+---
+
+
+
+{% block content %}
+<article class="section region flow prose">
+  <h1>{{ title }}</h1>
+
+  {{ content | safe }}
+
+  {% if tags %}
+    <p class="text-xs text-muted">Tags:
+      {% for tag in tags %}
+        <a href="/tags/{{ tag }}/" style="margin-right: 0.5rem;">#{{ tag }}</a>
+      {% endfor %}
+    </p>
+  {% endif %}
+</article>
+{% endblock %}

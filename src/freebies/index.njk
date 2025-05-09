@@ -1,0 +1,27 @@
+---
+title: Freebies
+layout: base.njk
+pagination:
+  data: collections.freebies
+  size: 100
+  alias: items
+permalink: /freebies/
+widths: [400, 520]
+---
+
+<div class="region" style="--region-space-top: var(--space-xl-2xl)">
+  <div class="wrapper flow prose">
+    <h1 class="gradient-text">{{ title }}</h1>
+
+<section class="section region flow">
+<div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 2rem;">
+    {% for item in items %}
+      <a href="{{ item.url }}" class="card" style="text-decoration: none;">
+        <img src="{{ item.data.thumbnail }}" alt="{{ item.data.title }}" style="width: 300px; border-radius: 1rem;">
+        <div class="flow" style="padding-top: 0.5rem;">
+          <h4 style="margin: 0;">{{ item.data.title }}</h4>
+        </div>
+      </a>
+    {% endfor %}
+  </div>
+</section> 

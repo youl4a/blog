@@ -9,8 +9,8 @@ export default {
       url: '/about/'
     },
     {
-      text: 'Freebies',
-      url: '/freebies/'
+      text: 'Resources',
+      url: '/resources/'
     },
     {
       text: 'Blog',

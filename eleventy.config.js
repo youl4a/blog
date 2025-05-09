@@ -35,6 +35,13 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('allPosts', getAllPosts);
   eleventyConfig.addCollection('showInSitemap', showInSitemap);
   eleventyConfig.addCollection('tagList', tagList);
+  eleventyConfig.addCollection("freebies", (collectionApi) => {
+    return collectionApi.getFilteredByTag("freebies");
+  });
+  eleventyConfig.addCollection("portfolio", (collectionApi) => {
+    return collectionApi.getFilteredByTag("portfolio");
+  });
+  
 
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.htmlConfig);
