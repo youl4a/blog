@@ -40,6 +40,15 @@
     {% include "head/meta-info.njk" %}
 	
 	<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+	
+	<!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-C62WFWTRG4"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-C62WFWTRG4');
+  </script>
   </head>
 
   <body class="{{ layout }}">

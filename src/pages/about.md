@@ -33,13 +33,15 @@ What began as a passion project for friends and family has grown into two Etsy s
 		<p>Whether I’m designing custom invitations or exploring new design trends, I’m always focused on bringing warmth, creativity, and happiness to everything I do. 
 		<br>Want to know more? <a href="mailto:youl4a@gmail.com"> Say hello anytime! ⇢</a> </br></p>
     </div>
-		
-		 <p><h3 id="an-eleventy-starter">Me around the web</h3></p>
+		 
+<h3 id="an-eleventy-starter">Me around the web</h3>
 
-Instagram
-Facebook
-LinkedIn
-GitHub
-Buy me a coffee
-      
+<br>**Personal:**</br> [Instagram](https://instagram.com/youl44a "Personal Instagram") · [Facebook](https://www.facebook.com/youl4a/ "Personal Facebook") · [LinkedIn](https://linkedin.com/in/julia-iliushchenko "Personal LinkedIn") · [GitHub](https://github.com/youl4a "Personal GitHub") · [Buy Me a Coffee](https://www.buymeacoffee.com/juliadesigner.com "Support me on Buy Me a Coffee")  
+
+<br>**Cute Invites Store:**</br> [Etsy](https://cuteinvitesstore.etsy.com "CuteInvitesStore Etsy Shop") · [Instagram](https://instagram.com/CuteInvitesStore "CuteInvitesStore Instagram") · [Pinterest](https://pinterest.com/CuteInvitesStore "CuteInvitesStore Pinterest") · [Facebook](https://facebook.com/CuteInvitesStore "CuteInvitesStore Facebook")  
+
+<br>**Cute Star Clipart:**</br> [Etsy](https://www.etsy.com/shop/CuteStarClipart "CuteStarClipart Etsy Shop")
+
+
+	  
 </div>
